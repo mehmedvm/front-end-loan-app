@@ -1,0 +1,110 @@
+<!--<p>loan-delete works!</p>-->
+<head>
+  <style>
+    /* Style the footer */
+  footer {
+    background-color: #8d9192;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+
+  article {
+  padding: 20px;
+ width: 100%;
+ background-color: rgb(189, 40, 26);
+ height: 400px; /* only for demonstration, should be removed */
+}
+
+h2 {
+ color: white;
+ text-shadow: 2px 2px 4px #000000;
+}
+</style>
+</head>
+
+<!--Delete User-->
+<br/>
+
+<article>
+  <hr>
+  <h2 style="text-align: center">Delete Loan By ID</h2>
+  <div class="card card-body mb-3">
+    <form>
+      <!--id firstname lastname email-->
+      <div class="form-group">
+        <label>ID</label>
+        <input type="text" class="form-control" name="id" #id>
+      </div>
+      <button (click)="deleteLoan(id.value)" class="btn btn-dark btn-block">Delete The Loan</button>
+    </form>
+    <hr>
+  </div>
+</article>
+
+<footer style="text-align: center; border: 2px solid rgb(192, 189, 182); color:white;">
+  <table style="width:60%">
+    <tr>
+      <!--Column-->
+      <th align="center">Our Commitment</th>
+      <th>Products</th>
+      <th>ON THE GO</th>
+      <th>Support</th>
+
+    </tr>
+    <tr>
+      <!--Row-->
+      <td align="center">Education </td>
+      <td>Credit Cards</td>
+      <td>Locations & ATMs</td>
+      <td>Covid-19</td>
+
+    </tr>
+    <tr>
+      <!--Row-->
+      <td align="center">Build Housing </td>
+      <td>Business</td>
+      <td>Mobile App</td>
+      <td>Help Center</td>
+
+    </tr>
+    <tr>
+      <!--Row-->
+      <td align="center">Build Green Niebourhood </td>
+      <td>Commercial</td>
+      <td>Meet Eno</td>
+      <td>Learn & Grow</td>
+
+    </tr>
+
+  </table>
+  <br>
+  <br>
+  <p style="text-align: left;">For all the details: reach us at care@acme.com</p>
+  <br/>
+
+
+</footer>
+
+
+
+
+
+
+<!--&lt;!&ndash;<p>loan-delete works!</p>&ndash;&gt;-->
+
+<!--&lt;!&ndash;Delete User&ndash;&gt;-->
+<!--<br/>-->
+<!--<hr>-->
+<!--<h2 style="text-align: center">Delete Loan By ID</h2>-->
+<!--<div class="card card-body mb-3">-->
+<!--  <form>-->
+<!--    &lt;!&ndash;id firstname lastname email&ndash;&gt;-->
+<!--    <div class="form-group">-->
+<!--      <label>ID</label>-->
+<!--      <input type="text" class="form-control" name="id" #id>-->
+<!--    </div>-->
+<!--    <button (click)="deleteLoan(id.value)" class="btn btn-dark btn-block">Delete The Loan</button>-->
+<!--  </form>-->
+<!--  <hr>-->
+<!--</div>-->

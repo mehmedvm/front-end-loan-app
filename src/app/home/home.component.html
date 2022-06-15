@@ -1,0 +1,220 @@
+
+<!--  <img [src]="acmeBankLogo" class="floatRight">-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<head>
+  <style>
+    /* Style the footer */
+  footer {
+    background-color: #8d9192;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+
+ header{
+   background-image: url('assets/Family_with_dog.png');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: 100% 120%;
+   height:auto;
+ }
+
+ article {
+     padding: 20px;
+    width: 100%;
+    background-color: rgb(56, 139, 156);
+    height: 400px; /* only for demonstration, should be removed */
+  }
+
+  h1 {
+ color: white;
+ text-shadow: 2px 2px 4px #000000;
+}
+
+h2{
+ color: white;
+ text-shadow: 2px 2px 4px #000000;
+}
+
+h3 {
+ color: rgb(103, 65, 65);
+ text-shadow: 2px 2px 4px #000000;
+}
+
+
+ </style>
+</head>
+<header>
+  <br>
+  <br>
+  <br>
+
+  <div class="w3-display-left w3-padding w3-hide-small" style="width:40%">
+    <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+      <h2 class="w3-xlarge"> Acme Bank Loan <br> Application <br> Management Tool</h2>
+      <hr class="w3-opacity">
+      <p style="color: white">Track and manage loan applications</p>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</header>
+
+<br>
+
+<article>
+  <h2 style="text-align: center; color:white;">Who We Are</h2>
+  <p style="text-align: center; border: 2px solid rgb(192, 189, 182); color:white;"><br><i><q>Acme Bank provides market-leading solutions, industry expertise, and insights to help enable our clients' growth and success, enhancing the communities we serve.</q></i><br><br></p>
+  <br>
+
+  <h2 style="text-align: center; color:white;">Our Services</h2>
+  <p style="text-align: center; border: 2px solid rgb(192, 189, 182); color:white;"><br><br><i><q>We can tailor a comprehensive suite of services and solutions to help fit your situation, whether you're riding out seasonal sales fluctuations, expanding into overseas markets, or looking for ways to improve working capital performance.</q></i><br><br></p>
+</article>
+<br>
+
+
+<div class="w3-row; btn-group">
+  <div class="w3-col w3-center">
+    <img src="assets/Check_all_Loans.jpg" alt="Check All Loans" style="width:90%">
+    <br>
+    <button class="btn btn-info" routerLink="/loans">All Loans</button>
+    <p>Please check all the loan applications.</p>
+  </div>
+  <br>
+  <div class="w3-col w3-center">
+    <img src="assets/Add_New_Loan.jpg" alt="Add New Loan" style="width:90%">
+    <br>
+    <button class="btn btn-success" routerLink="/create">Create Loan</button>
+    <p>For creating a new loan, please click here.</p>
+  </div>
+
+  <div class="w3-col w3-center">
+    <img src="assets/Update_Loan.jpg" alt="Update Loan" style="width:100%"><br>
+    <button class="btn btn-warning" routerLink="/update">Update Loan</button>
+    <p>In order to update your loans, please click here.</p>
+  </div>
+
+</div>
+
+<br>
+
+<div class="w3-row; btn-group">
+  <div class="w3-col w3-center">
+    <img src="assets/House_Loans.jpg" alt="House Loans" style="width:90%">
+    <button class="btn btn-danger" routerLink="/delete">Delete Loan</button>
+    <p>If you wanted to delete the loan application, then please clieck here.</p>
+  </div>
+
+  <div class="w3-col w3-center">
+    <img src="assets/Dad_with_Daughter.jpg" alt="Dad with Daughter" style="width:90%">
+    <button class="btn btn-dark" routerLink="/search">Search Loan</button>
+    <p>If you are looking for some loan application, please search here.</p>
+  </div>
+</div>
+
+
+<br>
+<br>
+
+
+
+<footer style="text-align: center; border: 2px solid rgb(192, 189, 182); color:white;">
+  <table style="width:60%">
+    <tr>
+      <!--Column-->
+      <th align="center">Our Commitment</th>
+      <th>Products</th>
+      <th>ON THE GO</th>
+      <th>Support</th>
+
+    </tr>
+    <tr>
+      <!--Row-->
+      <td align="center">Education </td>
+      <td>Credit Cards</td>
+      <td>Locations & ATMs</td>
+      <td>Covid-19</td>
+
+    </tr>
+    <tr>
+      <!--Row-->
+      <td align="center">Build Housing </td>
+      <td>Business</td>
+      <td>Mobile App</td>
+      <td>Help Center</td>
+
+    </tr>
+    <tr>
+      <!--Row-->
+      <td align="center">Build Green Niebourhood </td>
+      <td>Commercial</td>
+      <td>Meet Eno</td>
+      <td>Learn & Grow</td>
+
+    </tr>
+
+  </table>
+  <br>
+  <br>
+  <p style="text-align: left;">For all the details: reach us at care@acme.com</p>
+  <br/>
+
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div class="jumbotron">-->
+<!--&lt;!&ndash;  <img [src]="acmeBankLogo" class="floatRight">&ndash;&gt;-->
+<!--  <h1>Welcome to Acme Bank Loan Services</h1>-->
+<!--  <p>This is where you get the best loan deals!</p>-->
+
+
+<!--  <br>-->
+
+<!--    <article>-->
+<!--      <h2>Who We Are</h2>-->
+<!--      <p></p>Acme Bank provides market-leading solutions, industry expertise, and insights to help enable our clients' growth and success, enhancing the communities we serve.-->
+<!--      <br>-->
+<!--      <h2>Our Services</h2>-->
+<!--      <p>We can tailor a comprehensive suite of services and solutions to help fit your situation, whether you're riding out seasonal sales fluctuations, expanding into overseas markets, or looking for ways to improve working capital performance.</p>-->
+<!--    </article>-->
+<!--  <br>-->
+
+
+<!--  <div class="btn-group">-->
+<!--    <button class="btn btn-info" routerLink="/loans">All Loans</button>-->
+<!--    <button class="btn btn-success" routerLink="/create">Create Loan</button>-->
+<!--    <button class="btn btn-warning" routerLink="/update">Update Loan</button>-->
+<!--    <button class="btn btn-danger" routerLink="/delete">Delete Loan</button>-->
+<!--    <button class="btn btn-dark" routerLink="/search">Search Loan</button>-->
+<!--  </div>-->
+<!--</div>-->
+

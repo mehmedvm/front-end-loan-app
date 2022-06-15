@@ -1,0 +1,23 @@
+body {
+    background-color:azure;
+}
+
+h1 {
+    color: blue;
+}
+
+/*This is an id selector. It will allow you to be able to style
+  an HTML element that has an id attribute.*/
+#intro {
+    color: azure;
+    background-color: royalblue;
+}
+/*This is a class selector. They work in a similar way. The difference between the
+  class and the id attribute can only be applied once per page, while classes can be
+  used as many times on a page as needed.*/
+.first {
+    font-size: 130%;
+    background-color:yellow;
+    font-weight: bold;
+    width: 30%;
+}

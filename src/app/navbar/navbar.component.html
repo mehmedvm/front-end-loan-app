@@ -1,0 +1,41 @@
+
+<nav class="navbar navbar-expand navbar-dark bg-info mb-4">
+  <!--  <nav class="navbar navbar-expand navbar-dark bg-dark mb-4">-->
+  <div class="container">
+    <img [src]="acmeBankLogo" class="floatLeft">
+    <a routerLink="/" class="navbar-brand" ><b>Acme Bank Loan Services</b></a>
+    <div>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
+          <a routerLink="/" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
+          <a routerLink="/loans" class="nav-link">Loans</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+<!--<nav class="navbar navbar-expand navbar-dark bg-info mb-4">-->
+<!--&lt;!&ndash;  <nav class="navbar navbar-expand navbar-dark bg-dark mb-4">&ndash;&gt;-->
+<!--  <div class="container">-->
+<!--    <img [src]="acmeBankLogo" class="floatLeft">-->
+<!--    <a routerLink="/" class="navbar-brand" >Acme Bank Loan Services</a>-->
+<!--    <div>-->
+<!--      <ul class="navbar-nav ml-auto">-->
+<!--        <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">-->
+<!--          <a routerLink="/" class="nav-link">Home</a>-->
+<!--        </li>-->
+<!--        <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">-->
+<!--          <a routerLink="/loans" class="nav-link">Loans</a>-->
+<!--        </li>-->
+<!--      </ul>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</nav>-->

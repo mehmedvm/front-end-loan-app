@@ -1,0 +1,148 @@
+<!--<div>-->
+<!--<p>loan-get-all works!</p>-->
+<!--</div>-->
+<head>
+  <style>
+    /* Style the footer */
+  footer {
+    background-color: #8d9192;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+
+  article {
+  padding: 20px;
+ width: 100%;
+ background-color: rgb(56, 139, 156);
+ height: 800px; /* only for demonstration, should be removed */
+}
+
+h2 {
+ color: black;
+ text-shadow: 2px 2px 4px #000000;
+}
+</style>
+</head>
+<!--Fetch All Loans-->
+
+<article>
+<div class ="container">
+  <div class = "card">
+      <h2 class="text-center"> All Loans List</h2>
+      <div class = "card-body">
+        <table border class="table table-striped">
+          <thead bgcolor="azure">
+          <th align="left"> Id</th>
+          <th align="left"> Applicant Name</th>
+          <th align="left"> Phone No</th>
+          <th align="left"> Address</th>
+          <th align="left"> Email </th>
+          <th align="left"> Credit Score</th>
+          <th align="left"> Loan No</th>
+          <th align="left"> Interest Rate</th>
+          </thead>
+          <tbody>
+          <tr *ngFor = "let loan of loans">
+            <td> {{ loan.id}}</td>
+            <td> {{ loan.applicantName}}</td>
+            <td> {{ loan.phoneNo}}</td>
+            <td> {{ loan.address}}</td>
+            <td> {{ loan.email}}</td>
+            <td> {{ loan.creditScore}}</td>
+            <td> {{ loan.loanNumber}}</td>
+            <td> {{ loan.interestRate | number: '1.2-2' }}</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+  </div>
+</div>
+</article>
+
+
+<footer style="text-align: center; border: 2px solid rgb(192, 189, 182); color:white;">
+  <table style="width:60%">
+    <tr>
+      <!--Column-->
+      <th align="center">Our Commitment</th>
+      <th>Products</th>
+      <th>ON THE GO</th>
+      <th>Support</th>
+
+    </tr>
+    <tr>
+      <!--Row-->
+      <td align="center">Education </td>
+      <td>Credit Cards</td>
+      <td>Locations & ATMs</td>
+      <td>Covid-19</td>
+
+    </tr>
+    <tr>
+      <!--Row-->
+      <td align="center">Build Housing </td>
+      <td>Business</td>
+      <td>Mobile App</td>
+      <td>Help Center</td>
+
+    </tr>
+    <tr>
+      <!--Row-->
+      <td align="center">Build Green Niebourhood </td>
+      <td>Commercial</td>
+      <td>Meet Eno</td>
+      <td>Learn & Grow</td>
+
+    </tr>
+
+  </table>
+  <br>
+  <br>
+  <p style="text-align: left;">For all the details: reach us at care@acme.com</p>
+  <br/>
+
+
+</footer>
+
+
+
+
+
+
+<!--&lt;!&ndash;<div>&ndash;&gt;-->
+<!--&lt;!&ndash;<p>loan-get-all works!</p>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;Fetch All Loans&ndash;&gt;-->
+<!--<div class ="container">-->
+<!--  <div class = "card">-->
+<!--    <h3 class="text-center"> All Loans List</h3>-->
+<!--    <div class = "card-body">-->
+<!--      <table border class="table table-striped">-->
+<!--        <thead bgcolor="azure">-->
+<!--        <th align="left"> Id</th>-->
+<!--        <th align="left"> Applicant Name</th>-->
+<!--        <th align="left"> Phone No</th>-->
+<!--        <th align="left"> Address</th>-->
+<!--        <th align="left"> Email </th>-->
+<!--        <th align="left"> Credit Score</th>-->
+<!--        <th align="left"> Loan No</th>-->
+<!--        <th align="left"> Interest Rate</th>-->
+<!--        </thead>-->
+<!--        <tbody>-->
+<!--        <tr *ngFor = "let loan of loans">-->
+<!--          <td> {{ loan.id}}</td>-->
+<!--          <td> {{ loan.applicantName}}</td>-->
+<!--          <td> {{ loan.phoneNo}}</td>-->
+<!--          <td> {{ loan.address}}</td>-->
+<!--          <td> {{ loan.email}}</td>-->
+<!--          <td> {{ loan.creditScore}}</td>-->
+<!--          <td> {{ loan.loanNumber}}</td>-->
+<!--          <td> {{ loan.interestRate | number: '1.2-2' }}</td>-->
+<!--        </tr>-->
+<!--        </tbody>-->
+<!--      </table>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->

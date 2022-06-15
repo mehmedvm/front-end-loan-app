@@ -1,0 +1,216 @@
+
+<head>
+  <style>
+    /* Style the footer */
+  footer {
+    background-color: #8d9192;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+
+  article {
+  padding: 20px;
+ width: 100%;
+ background-color: rgb(30, 35, 36);
+ height: 500px; /* only for demonstration, should be removed */
+}
+
+h2 {
+ color: white;
+ text-shadow: 2px 2px 4px #000000;
+}
+
+</style>
+</head>
+
+
+<br/>
+<article>
+  <h2 style="text-align: center">Search for Loan...</h2>
+
+
+  <div class="container">
+    <div class="card card-body mb-3">
+      <div class="form-group">
+        <label>ID</label>
+        <input type="text" class="form-control" name="id" #id>
+      </div>
+      <button (click)="search(id.value)" class="btn btn-dark btn-block">Search</button>
+    </div>
+  </div>
+
+  <!-- initial code-->
+  <!--<div class="container">-->
+  <!--  <div *ngIf="loan" class="card" style="width:400px">-->
+  <!--    <div class="card-body">-->
+  <!--      <h4 class="card-title">Applicant Name: {{loan.applicantName}} </h4>-->
+  <!--      <p class="card-text">Phone No: {{loan.phoneNo}}</p>-->
+  <!--      <p class="card-text">Address: {{loan.address}}</p>-->
+  <!--      <p class="card-text">Email: {{loan.email}}</p>-->
+  <!--      <p class="card-text">Credit Score: {{loan.creditScore}}</p>-->
+  <!--      <p class="card-text">Loan Number: {{loan.loanNumber}}</p>-->
+  <!--      <p class="card-text">Interest Rate: {{loan.interestRate}}</p>-->
+  <!--&lt;!&ndash;      <a href="#" class="btn btn-primary">See Profile</a>&ndash;&gt;-->
+  <!--    </div>-->
+  <!--  </div>-->
+  <!--</div>-->
+
+
+  <!--Fetch Loan by ID-->
+  <div class ="container">
+    <div class = "card">
+      <h3> Search Result:</h3>
+      <div class = "card-body">
+        <table border class="table table-striped">
+          <thead bgcolor="azure">
+          <th align="left"> Id</th>
+          <th align="left"> Applicant Name</th>
+          <th align="left"> Phone No</th>
+          <th align="left"> Address</th>
+          <th align="left"> Email </th>
+          <th align="left"> Credit Score</th>
+          <th align="left"> Loan No</th>
+          <th align="left"> Interest Rate</th>
+          </thead>
+          <tbody>
+          <tr *ngIf="loan" class="card-body">
+            <!--         <div class="card-body">-->
+            <td> {{ loan.id}}</td>
+            <td> {{ loan.applicantName}}</td>
+            <td> {{ loan.phoneNo}}</td>
+            <td> {{ loan.address}}</td>
+            <td> {{ loan.email}}</td>
+            <td> {{ loan.creditScore}}</td>
+            <td> {{ loan.loanNumber}}</td>
+            <td> {{ loan.interestRate | number: '1.2-2' }}</td>
+            <!--         </div>-->
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</article>
+<footer style="text-align: center; border: 2px solid rgb(192, 189, 182); color:white;">
+  <table style="width:60%">
+    <tr>
+      <!--Column-->
+      <th align="center">Our Commitment</th>
+      <th>Products</th>
+      <th>ON THE GO</th>
+      <th>Support</th>
+
+    </tr>
+    <tr>
+      <!--Row-->
+      <td align="center">Education </td>
+      <td>Credit Cards</td>
+      <td>Locations & ATMs</td>
+      <td>Covid-19</td>
+
+    </tr>
+    <tr>
+      <!--Row-->
+      <td align="center">Build Housing </td>
+      <td>Business</td>
+      <td>Mobile App</td>
+      <td>Help Center</td>
+
+    </tr>
+    <tr>
+      <!--Row-->
+      <td align="center">Build Green Niebourhood </td>
+      <td>Commercial</td>
+      <td>Meet Eno</td>
+      <td>Learn & Grow</td>
+
+    </tr>
+
+  </table>
+  <br>
+  <br>
+  <p style="text-align: left;">For all the details: reach us at care@acme.com</p>
+  <br/>
+
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+<!--<br/>-->
+<!--<h2 style="text-align: center">Search for Loan...</h2>-->
+<!--<div class="container">-->
+<!--  <div class="card card-body mb-3">-->
+<!--    <div class="form-group">-->
+<!--      <label>ID</label>-->
+<!--      <input type="text" class="form-control" name="id" #id>-->
+<!--    </div>-->
+<!--    <button (click)="search(id.value)" class="btn btn-dark btn-block">Search</button>-->
+<!--  </div>-->
+<!--</div>-->
+
+<!--&lt;!&ndash; initial code&ndash;&gt;-->
+<!--&lt;!&ndash;<div class="container">&ndash;&gt;-->
+<!--&lt;!&ndash;  <div *ngIf="loan" class="card" style="width:400px">&ndash;&gt;-->
+<!--&lt;!&ndash;    <div class="card-body">&ndash;&gt;-->
+<!--&lt;!&ndash;      <h4 class="card-title">Applicant Name: {{loan.applicantName}} </h4>&ndash;&gt;-->
+<!--&lt;!&ndash;      <p class="card-text">Phone No: {{loan.phoneNo}}</p>&ndash;&gt;-->
+<!--&lt;!&ndash;      <p class="card-text">Address: {{loan.address}}</p>&ndash;&gt;-->
+<!--&lt;!&ndash;      <p class="card-text">Email: {{loan.email}}</p>&ndash;&gt;-->
+<!--&lt;!&ndash;      <p class="card-text">Credit Score: {{loan.creditScore}}</p>&ndash;&gt;-->
+<!--&lt;!&ndash;      <p class="card-text">Loan Number: {{loan.loanNumber}}</p>&ndash;&gt;-->
+<!--&lt;!&ndash;      <p class="card-text">Interest Rate: {{loan.interestRate}}</p>&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;      <a href="#" class="btn btn-primary">See Profile</a>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;  </div>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;Fetch Loan by ID&ndash;&gt;-->
+<!--<div class ="container">-->
+<!--  <div class = "card">-->
+<!--    <h3> Search Result:</h3>-->
+<!--    <div class = "card-body">-->
+<!--      <table border class="table table-striped">-->
+<!--        <thead bgcolor="azure">-->
+<!--        <th align="left"> Id</th>-->
+<!--        <th align="left"> Applicant Name</th>-->
+<!--        <th align="left"> Phone No</th>-->
+<!--        <th align="left"> Address</th>-->
+<!--        <th align="left"> Email </th>-->
+<!--        <th align="left"> Credit Score</th>-->
+<!--        <th align="left"> Loan No</th>-->
+<!--        <th align="left"> Interest Rate</th>-->
+<!--        </thead>-->
+<!--        <tbody>-->
+<!--        <tr *ngIf="loan" class="card-body">-->
+<!--&lt;!&ndash;         <div class="card-body">&ndash;&gt;-->
+<!--          <td> {{ loan.id}}</td>-->
+<!--          <td> {{ loan.applicantName}}</td>-->
+<!--          <td> {{ loan.phoneNo}}</td>-->
+<!--          <td> {{ loan.address}}</td>-->
+<!--          <td> {{ loan.email}}</td>-->
+<!--          <td> {{ loan.creditScore}}</td>-->
+<!--          <td> {{ loan.loanNumber}}</td>-->
+<!--          <td> {{ loan.interestRate | number: '1.2-2' }}</td>-->
+<!--&lt;!&ndash;         </div>&ndash;&gt;-->
+<!--        </tr>-->
+<!--        </tbody>-->
+<!--      </table>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
+
+
+
+
+
